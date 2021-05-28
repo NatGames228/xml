@@ -1,0 +1,385 @@
+## 1. Страницы
+
+**Тип метаданных**
+
+Page
+
+**Библиотека компонентов**
+
+    http://n2oapp.net/framework/config/schema/page-3.0>
+
+### 1.1. &lt;simple-page&gt;
+
+Страница с единственным виджетом.
+
+**Пример**
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<simple-page xmlns="http://n2oapp.net/framework/config/schema/page-3.0"
+    name="Моя страница">
+    <form>...</form>
+</simple-page>
+```
+
+**Атрибуты**
+
+| Наименование            | Тип        | Описание                                                       | Значение по умолчанию                  |
+| ----------------------- | ---------- | -------------------------------------------------------------- | -------------------------------------- |
+| name                    | Строка     | Наименование страницы                                          | Берётся из виджета                     |
+| title                   | Строка     | Заголовок страницы                                             |                                        |
+| html-title              | Строка     | Заголовок вкладки браузера                                     | Наименование страницы                  |
+| route                   | Строка     | URL страницы                                                   | Формируется из идентификатора страницы |
+| modal-size              | sm lg      | Размер модального окна, если страница открыта в модальном окне |                                        |
+| show-title              | true false | Показывать заголовок страницы?                                 | false                                  |
+
+**Тело**
+
+Поставь ссылку!
+
+### 1.2. &lt;page&gt;
+
+Страница с регионами.
+
+**Атрибуты**
+
+| Наименование | Тип              | Описание                                                       | Значение по умолчанию                  |
+| ------------ | ---------------- | -------------------------------------------------------------- | -------------------------------------- |
+| scr          | Строка           | Реализация страницы                                            |                                        |
+| name         | Строка           | Наименование страницы                                          |                                        |
+| route        | Строка           | URL страницы                                                   | Формируется из идентификатора страницы |
+| modal-size   | sm lg            | Размер модального окна, если страница открыта в модальном окне |                                        |
+| object-id    | Ссылка на объект | Главный объект страницы                                        |                                        |
+
+
+### 1.3. &lt;left-right-page&gt;
+
+### 1.4. &lt;top-left-right-page&gt;
+
+### 1.5. &lt;searchable-page&gt;
+
+## 2. Регионы
+
+### 2.1. Базовые свойства
+
+### 2.2. &lt;tabs&gt;
+
+### 2.3. &lt;tab&gt;
+
+### 2.4. &lt;line&gt;
+
+### 2.5. &lt;panel&gt;
+
+### 2.6. &lt;region&gt;
+
+## 3. Виджеты
+
+### 3.1. Базовые свойства
+
+### 3.2. &lt;table&gt;
+
+### 3.3. &lt;form&gt;
+
+### 3.4. &lt;tree&gt;
+
+### 3.5. &lt;list&gt;
+
+### 3.6. &lt;chart&gt;
+
+### 3.7. &lt;html&gt;
+
+### 3.8. &lt;calendar&gt;
+
+### 3.9. &lt;tiles&gt;
+
+### 3.10. &lt;cards&gt;
+
+### 3.11. &lt;widget&gt;
+
+## 4. Филдсеты
+
+### 4.1. Базовые свойства
+
+### 4.2. &lt;set&gt;
+
+### 4.3. &lt;line&gt;
+
+### 4.4. &lt;multi-set&gt;
+
+## 5. Поля ввода
+
+### 5.1. Базовые свойства
+
+### 5.2. Базовые свойства простых компонентов
+
+### 5.3. Базовые свойства списковых компонентов
+
+### 5.4. Базовые свойства интервальных компонентов
+
+### 5.5. &lt;input-text&gt;
+
+### 5.6. &lt;auto-complete&gt;
+
+### 5.7. &lt;input-money&gt;
+
+### 5.8. &lt;password&gt;
+
+### 5.9. &lt;output-text&gt;
+
+### 5.10. &lt;output-list&gt;
+
+### 5.11. &lt;image&gt;
+
+### 5.12. &lt;statuses&gt;
+
+### 5.13. &lt;status&gt;
+
+### 5.14. &lt;masked-input&gt;
+
+### 5.15. &lt;number-picker&gt;
+
+### 5.16. &lt;checkbox&gt;
+
+### 5.17. &lt;date-time&gt;
+
+### 5.18. &lt;time-picker&gt;
+
+### 5.19. &lt;file-upload&gt;
+
+### 5.20. &lt;image-upload&gt;
+
+### 5.21. &lt;select&gt;
+
+### 5.22. &lt;input-select&gt;
+
+### 5.23. &lt;select-tree&gt;
+
+### 5.24. &lt;input-select-tree&gt;
+
+### 5.25. &lt;radio-group&gt;
+
+### 5.26. &lt;checkbox-group&gt;
+
+### 5.27. &lt;pills&gt;
+
+### 5.28. &lt;list&gt;
+
+### 5.29. &lt;grid&gt;
+
+### 5.30. &lt;tree&gt;
+
+### 5.31. &lt;date-interval&gt;
+
+### 5.32. &lt;input-interval&gt;
+
+### 5.33. &lt;interval-field&gt;
+
+### 5.34. &lt;text-area&gt;
+
+### 5.35. &lt;text-editor&gt;
+
+### 5.36. &lt;code-editor&gt;
+
+### 5.37. &lt;text&gt;
+
+### 5.38. &lt;html&gt;
+
+### 5.39. &lt;code&gt;
+
+### 5.40. &lt;rating&gt;
+
+### 5.41. &lt;field&gt;
+
+### 5.42. &lt;search-buttons&gt;
+
+### 5.43. &lt;slider&gt;
+
+### 5.44. &lt;alert&gt;
+
+### 5.45. &lt;progress&gt;
+
+### 5.46. &lt;status&gt;
+
+## 6. Действия
+
+### 6.1. Базовые свойства
+
+### 6.2. &lt;open-page&gt;
+
+### 6.3. &lt;show-modal&gt;
+
+### 6.4. &lt;open-drawer&gt;
+
+### 6.5. &lt;a&gt;
+
+### 6.6. &lt;print&gt;
+
+### 6.7. &lt;refresh&gt;
+
+### 6.8. &lt;invoke&gt;
+
+### 6.9. &lt;perform-validation&gt;
+
+### 6.10. &lt;close&gt;
+
+### 6.11. &lt;clear&gt;
+
+### 6.12. &lt;set-value&gt;
+
+### 6.13. &lt;execute-query&gt;
+
+### 6.14. &lt;perform&gt;
+
+### 6.15. &lt;set-value&gt;
+
+### 6.16. &lt;submit&gt;
+
+### 6.17. &lt;path-param&gt;
+
+### 6.18. &lt;header-param&gt;
+
+### 6.19. &lt;form-param&gt;
+
+## 7. Ячейки
+
+### 7.1. Общие свойства
+
+### 7.2. &lt;text&gt;
+
+### 7.3. &lt;link&gt;
+
+### 7.4. &lt;icon&gt;
+
+### 7.5. &lt;checkbox&gt;
+
+### 7.6. &lt;progress&gt;
+
+### 7.7. &lt;image&gt;
+
+### 7.8. &lt;statuses&gt;
+
+### 7.9. &lt;status&gt;
+
+### 7.10. &lt;edit&gt;
+
+### 7.11. &lt;toolbar&gt;
+
+### 7.12. &lt;badge&gt;
+
+### 7.13. &lt;list&gt;
+
+### 7.14. &lt;rating&gt;
+
+### 7.15. &lt;tooltip-list&gt;
+
+### 7.16. &lt;switch&gt;
+
+### 7.17. &lt;cell&gt;
+
+## 8. Графики
+
+### 8.1. Базовые свойства
+
+### 8.2. &lt;areas&gt;
+
+### 8.3. &lt;bars&gt;
+
+### 8.4. &lt;lines&gt;
+
+### 8.5. &lt;pie&gt;
+
+### 8.6. Элементы графиков/диаграмм
+
+### 8.7. &lt;area&gt;
+
+### 8.8. &lt;bar&gt;
+
+### 8.9. &lt;line&gt;
+
+## 9. Объект &lt;object&gt;
+
+### 9.1. &lt;fields&gt;
+
+### 9.2. &lt;operation&gt;
+
+### 9.3. &lt;validations&gt;
+
+## 10. Выборка &lt;query&gt;
+
+### 10.1. &lt;list&gt;
+
+### 10.2. &lt;count&gt;
+
+### 10.3. &lt;unique&gt;
+
+### 10.4. &lt;fields&gt;
+
+## 11. Провайдеры данных
+
+### 11.1. Стандартные провайдеры
+
+### 11.2. JPA
+
+### 11.3. Spring Data
+
+## 12. Хедеры
+
+### 12.1. &lt;nav&gt;
+
+### 12.2. &lt;extra-menu&gt;
+
+### 12.3. &lt;search&gt;
+
+## 13. Меню
+
+### 13.1. &lt;page&gt;
+
+### 13.2. &lt;a&gt;
+
+### 13.3. &lt;sub-menu&gt;
+
+## 14. Схема доступа &lt;access&gt;
+
+### 14.1. &lt;permission&gt;
+
+### 14.2. &lt;role&gt;
+
+### 14.3. &lt;user&gt;
+
+### 14.4. &lt;authenticated&gt;
+
+### 14.5. &lt;anonymous&gt;
+
+### 14.6. &lt;permit-all&gt;
+
+## 15. Точки доступа
+
+### 15.1. &lt;object-access&gt;
+
+### 15.2. &lt;object-filters&gt;
+
+### 15.3. &lt;url-access&gt;
+
+### 15.4. &lt;page-access&gt;
+
+## 16. Процессинг &lt;processing&gt;
+
+### 16.1. &lt;pointcuts&gt;
+
+### 16.2. &lt;before&gt;
+
+### 16.3. &lt;after-success&gt;
+
+### 16.4. &lt;after-fail&gt;
+
+## 17. Базовые элементы
+
+### 17.1. Типы данных domain
+
+### 17.2. Предустановленная фильтрация &lt;pre-filters&gt;
+
+### 17.3. Переключатель &lt;switch;&gt;
+
+### 17.4. Клик &lt;click&gt;
+
+### 17.5. Параметр провайдера данных
+
